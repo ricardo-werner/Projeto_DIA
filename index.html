@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto D.I.A</title>
-</head>
-<body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--SEO-->
+    <meta
+      name="description"
+      content="Projeto D.I.A - Desenvolvimento Inclusivo e Acessível. Uma Web para todos!"
+    />
+    <meta
+      name="keywords"
+      content="acessibilidade, inclusão, web acessível, desenvolvimento web, Projeto D.I.A, front-end, design inclusivo"
+    />
+    <meta name="author" content="Ricardo Werner" />
+
+    <!-- Fonte utilizada no projeto: default: Inter e Dislexia: Lexand ou Atkinson Hyperlegible -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Projeto DIA - Desenvolvimento Inclusivo e Acessível</title>
+
+    <link rel="stylesheet" href="./src/assets/styles/index.css" />
+  </head>
+  
+  <body>
 
     <footer class="footer-main">
-            <p class="copyright" id="footer-content">
-                &copy; Copyright&nbsp;&nbsp;Ricardo Werner - Dev. Front-end&nbsp;&nbsp;
-            </p>
-            <script>
-                const date = new Date();
-                document.getElementById("footer-content").innerHTML +=
-                date.getFullYear();
-            </script>
+      <p class="copyright" id="footer-content">
+        &copy; Copyright&nbsp;&nbsp;Ricardo Werner - Dev. Front-end&nbsp;&nbsp;
+      </p>
+      <script>
+        const date = new Date();
+        document.getElementById("footer-content").innerHTML +=
+          date.getFullYear();
+      </script>
 
-            <p class="redes">Rede para contatos</p>
+      <p class="redes">Rede para contatos</p>
 
-            <div class="social-icons">
-                <a
-                    href="https://www.linkedin.com/in/ricardo-werner"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="linkedin"
-                >
-                <img src="./src/assets/pictures/images/linkedin.png" alt="Linkedin" />
-                </a>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ricardo-werner"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="linkedin"
+        >
+          <img src="./src/assets/pictures/images/linkedin.png" alt="Linkedin" />
+        </a>
 
-                <a
-                    href="https://www.github.com/ricardo-werner"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="github"
-                >
-                <img src="./src/assets/pictures/images/github.png" alt="Github" />
-                </a>
+        <a
+          href="https://www.github.com/ricardo-werner"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github"
+        >
+          <img src="./src/assets/pictures/images/github.png" alt="Github" />
+        </a>
 
-                <a
-                    href="https://wa.me/5548992102106?text=Olá,%20vamos%20conversar!!"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="whatsapp"
-                >
-                <img src="./src/assets/pictures/images/whatsapp.png" alt="Whatsapp" />
-                </a>
-            </div>
+        <a
+          href="https://wa.me/5548992102106?text=Olá,%20vamos%20conversar!!"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp"
+        >
+          <img src="./src/assets/pictures/images/whatsapp.png" alt="Whatsapp" />
+        </a>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
