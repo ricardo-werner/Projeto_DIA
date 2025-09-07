@@ -1,4 +1,3 @@
-/* reset.css | Reset básico e moderno */
 *,
 *::before,
 *::after {
@@ -9,7 +8,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%; /* 1rem = 10px (opcional, útil em layouts responsivos) */
+    font-size: 62.5%; /* 1rem = 10px*/
 }
 
 body {
