@@ -191,5 +191,48 @@
 
     </main>
 
+    <footer class="footer-main">
+      <p class="copyright" id="footer-content">
+        &copy; Copyright&nbsp;&nbsp;Ricardo Werner - Dev. Front-end&nbsp;&nbsp;
+      </p>
+      <script>
+        const date = new Date();
+        document.getElementById("footer-content").innerHTML +=
+          date.getFullYear();
+      </script>
+
+      <p class="redes">Rede para contatos</p>
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/ricardo-werner"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="linkedin"
+        >
+          <img src="./src/assets/pictures/images/linkedin.png" alt="Linkedin" />
+        </a>
+
+        <a
+          href="https://www.github.com/ricardo-werner"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github"
+        >
+          <img src="./src/assets/pictures/images/github.png" alt="Github" />
+        </a>
+
+        <a
+          href="https://wa.me/5548992102106?text=Olá,%20vamos%20conversar!!"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp"
+        >
+          <img src="./src/assets/pictures/images/whatsapp.png" alt="Whatsapp" />
+        </a>
+      </div>
+    </footer>
+
+
   </body>
 </html>
