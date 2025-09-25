@@ -258,17 +258,16 @@
     </main>
 
     <footer class="footer-main">
+      
       <p class="copyright" id="footer-content">
-        &copy; Copyright&nbsp;&nbsp;Projeto D.I.A - Construindo com a missão de uma web para todos;
-      </p>
-      <p>
+        <script>
+          const date = new Date();
+          document.getElementById("footer-content").innerHTML +=
+            date.getFullYear();
+        </script>
+        &copy; Copyright&nbsp;-&nbsp;Projeto D.I.A - Construindo com a missão de uma web para todos&nbsp;<br>
         Autor: Ricardo Werner - Desenvolvedor Front-end&nbsp;&&nbsp;Acessibilidade(A11Y)&nbsp;&&nbsp;Inclusão Digital
       </p>
-      <script>
-        const date = new Date();
-        document.getElementById("footer-content").innerHTML +=
-          date.getFullYear();
-      </script>
 
       <p class="redes">Rede para contatos</p>
 
