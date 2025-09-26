@@ -1,0 +1,55 @@
+.font-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#font-toggle-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--clr-text);
+}
+
+.switch {
+  display:flex;
+  align-items: center;
+  position: relative;
+  width: 12rem;
+  height: 3.4rem;
+  background-color: #E9ECEF;
+  border-radius: 1.7rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--clr-border);
+  transition: background-color 0.3s ease;
+}
+
+.switch-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 50%;
+  text-align: center;
+  color: #6C757D;
+  z-index: 1;
+}
+
+.switch-handle {
+  position: absolute;
+  height: 2.8rem;
+  width: 5.4rem;
+  background-color: var(--clr-white);
+  border-radius: 1.4rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  left: 0.3rem;
+}
+
+.switch[aria-checked="true"] .switch-handle {
+  transform: translateX(5.8rem);
+}
+
+.switch[aria-checked="true"] {
+  background-color: var(--clr-primary-light);
+}
+
+
