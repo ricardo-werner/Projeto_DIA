@@ -52,4 +52,28 @@
   background-color: var(--clr-primary-light);
 }
 
+.toggle-button {
+  background-color: var(--clr-primary-light);
+  color: var(--clr-white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  align-self: center; /* Centraliza o botão verticalmente */
+}
+
+.toggle-button:hover {
+  background-color: var(--clr-primary-dark);
+}
+
+.info-text {
+  text-align: center;
+  font-size: italic;
+  color: #6C757D;
+  display: block;
+  margin-top: var(--spacing-md);
+}
+
 
