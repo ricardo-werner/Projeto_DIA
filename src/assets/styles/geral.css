@@ -1,3 +1,51 @@
 :root {
-    --ff: 'Poppins', sans-serif;
+    --clr-primary-dark: #0A3D62; /* Contrate 10.3:1 com branco */
+    --clr-primary-light: #2A7AE2; /* Contrate 4.8:1 com branco */
+    --clr-text: #343A40;
+    --clr-text-low-contrast: #9CA3AF; /* Reprovado */
+    --clr-error: #D90429; 
+    --bg-light: #F8F9FA;
+    --bg-section: #FFFFFF;
+    --clr-white: #FFFFFF;
+    --clr-border: #DEE2E6;
+
+    --font-interface: 'Inter', sans-serif; /* Para UI: botões, menus, títulos */
+    --font-reading: 'Lexend', sans-serif; /* Para leitura de textos longos */
+    --font-dyslexia-unfriendly: 'Times New Roman', serif;
+
+    --spacing-sm: 1.2rem;
+    --spacing-md: 2.4rem;
+    --spacing-lg: 4.8rem;
+    --spacing-xl: 8rem;
+}
+
+body {
+    /* A fonte principal da interface é a Inter, por sua clareza e neutralidade */
+    font-family: var(--font-interface);
+    font-size: 1.6rem; /* Base 16px */
+    line-height: 1.7; /* Espaçamento generoso entre linhas (WCAG para Cognitiva) */
+    text-align: left; /* Evita texto justificado, que cria "rios" e dificulta a leitura */
+    background-color: var(--bg-light);
+    color: var(--clr-text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Quando o modo de leitura está ativo, parágrafos e listas usam Lexend */
+body.reading-font-active p,
+body.reading-font-active li {
+    font-family: var(--font-reading);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
