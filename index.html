@@ -45,28 +45,41 @@
   </head>
   
   <body>
-    <a href="#main-header" class="skip-link">Pular para o conteúdo principal</a>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
     <header class="main-header">
-      <nav class="container" aria-label="Navegação principal">
+      <div class="container">
         <a href="#" class="logo">Projeto D.I.A</a>
-        <ul>
-          <li><a href="#sobre" aria-current="page">Sobre</a></li>
-          <li><a href="#principios">Princípios</a></li>
-          <li><a href="#diferencas">Na prática</a></li>
-          <li><a href="#ferramentas">Ferramentas</a></li>
-        </ul>
-        
-        <!-- Novo Toggle de Fonte -->
-        <div class="font-toggle" role="region" aria-label="Seletor de fonte para leitura">
-          <label id="font-toggle-label"="font-switch">Fonte para leitura</label>
-          <button id="font-switch" class="switch" role="switch"  aria-checked="false" aria-labelledby="font-toggle-label">
-            <span class="switch-text" aria-hidden="true">Padrão</span>
-            <span class="switch-handle"></span>
-            <span class="switch-text" aria-hidden="true">Dislexia</span>
-          </button>
-        </div>
-      </nav>
+
+          <nav class="main-nav" aria-label="Navegação Principal">
+            <!-- Botão Hamburguer para Mobile -->
+            <button class="line" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+
+            <!-- Wrapper para Navegação e Toggle de Fonte -->
+            <div class="nav-wrapper" id="nav-wrapper" role="dialog" aria-label="true" aria-hidden="true">
+              <ul>
+                <li><a href="#sobre" aria-current="page">Sobre</a></li>
+                <li><a href="#principios">Princípios</a></li>
+                <li><a href="#diferencas">Na prática</a></li>
+                <li><a href="#ferramentas">Ferramentas</a></li>
+              </ul>
+              
+              <!-- Novo Toggle de Fonte -->
+              <div class="font-toggle" role="region" aria-label="Seletor de fonte para leitura">
+                <label id="font-toggle-label"="font-switch">Fonte para leitura</label>
+                <button id="font-switch" class="switch" role="switch"  aria-checked="false" aria-labelledby="font-toggle-label">
+                  <span class="switch-text" aria-hidden="true">Padrão</span>
+                  <span class="switch-handle"></span>
+                  <span class="switch-text" aria-hidden="true">Dislexia</span>
+                </button>
+              </div>
+            </div>
+          </nav>
+      </div>
     </header>
 
     <main id="main-content">
