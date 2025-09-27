@@ -32,4 +32,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const isChecked = document.body.classList.toggle('reading-font-active');
     fontSwitch.setAttribute('aria-checked', isChecked);
   });
+
+  // Lógica do Menu Hamburguer
+  const hamburgerBtn = document.querySelector('.hamburger-btn');
+  const navWrapper = document.getElementById('nav-wrapper');
+  const body = document.body;
+
+  hamburgerBtn.addEventListener('click', () => {
+    const isOpened = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+    hamburgerBtn.setAttribute('aria-expanded', !isOpened);
+    navWrapper.setAttribute('aria-hidden', isOpened);
+    body.classList.toggle('nav-open');
+
+    if (!isOpened) {
+      //Opcional: focar no primeiro item do menu quando aberto
+      navWrapper.querySelector('a').focus();
+    }
+  });
 });
