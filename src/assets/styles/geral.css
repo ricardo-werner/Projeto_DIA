@@ -30,6 +30,11 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* trava o scroll quando o menu mobile estiver aberto */
+body.nav-open {
+    overflow: hidden;
+}
+
 /* Quando o modo de leitura está ativo, parágrafos e listas usam Lexend */
 body.reading-font-active p,
 body.reading-font-active li {
