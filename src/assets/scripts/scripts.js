@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+  /* A inicialização do VLibras foi movida para cá para garantir que o DOM esteja completamente carregado antes de inicializar o widget */
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+    
   // Desafio do Contraste
   const toggleContrastBtn = document.getElementById('toggle-contrast');
   const contrastText = document.getElementById('contrast-text');
