@@ -70,14 +70,15 @@ a {
 /* Garante que o container do VLibras fique na camada mais alta */
 .vw-access-button.active {
     position: fixed !important;
-    right: 2rem !important;
-    bottom: 2rem !important;
+    right: 3rem !important;
+    bottom: 3rem !important;
     width: auto !important;
     height: auto !important;
     opacity: 1 !important;
     z-index: 9999 !important;
     display: block !important;
-    transform: none !important;    
+    transform: none !important;
+    visibility: visible !important;
 }
 
 /* Smartphone modernos */
