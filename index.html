@@ -115,8 +115,8 @@
           <div class="principles-grid">
             <div class="principle-card">
               <svg class="principle-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <circle cx="12" cy="12" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
               </svg>
             
               <h3>Perceptível</h3>
@@ -127,8 +127,8 @@
 
             <div class="principle-card">
               <svg class="principle-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <polyline points="22 4 12 14.01 9 11.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
               <h3>Operável</h3>
               <p>
@@ -138,10 +138,10 @@
 
             <div class="principle-card">
               <svg class="principle-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                <line x1="12" y1="19" x2="12" y2="23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-                <line x1="8" y1="23" x2="16" y2="23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
               </svg>
               <h3>Compreensível</h3>
               <p>
@@ -151,8 +151,8 @@
 
             <div class="principle-card">
               <svg class="principle-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polyline points="16 18 22 12 16 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-                <polyline points="8 6 2 12 8 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
               </svg>
               <h3>Robusto</h3>
               <p>
@@ -181,18 +181,21 @@
                 Aplicar Alto Contraste
               </button>
             </div>
-            <!-- Desafio 2: Cor -->
+            <!-- Desafio 2: Cor e Validação -->
             <div class="interactive-card">
-              <h3>2. O Desafio da Cor</h3>
+              <h3>2. O Desafio da Cor e Validação</h3>
               <div class="example-area">
-                <label for="color-input">Email:</label>
-                <input type="text" id="color-input" class="challenge-input error-border-only" value="email-invalido@">
-                <span id="color-error-msg" class="error-message-hidden">
+                <label for="validation-input">Email:</label>
+                <input type="email" id="validation-input" class="challenge-input" placeholder="teste@exemplo.com">
+                <span id="validation-error-msg" class="error-message-hidden">
                   <strong>⚠️ Erro:</strong> Formato de email inválido.
                 </span>
+                <span id="validation-success-msg" class="success-message-hidden">
+                  <strong>✅ Sucesso:</strong> Email válido!
+                </span>
               </div>
-              <button class="toggle-button" id="toggle-color" aria-controls="color-error-msg">
-                Adicionar Reforço Visual
+              <button class="toggle-button" id="validate-button">
+                Validar Email
               </button>
             </div>
             <!-- Desafio 3: Tipografia -->
