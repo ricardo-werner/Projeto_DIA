@@ -1,68 +1,75 @@
-
+// Aguarda o DOM estar completamente carregado antes de executar o script
 document.addEventListener('DOMContentLoaded', () => {
-  /* A inicialização do VLibras foi movida para cá para garantir que o DOM esteja completamente carregado antes de inicializar o widget */
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-    
-  // Desafio do Contraste
-  const toggleContrastBtn = document.getElementById('toggle-contrast');
-  const contrastText = document.getElementById('contrast-text');
-  if(toggleContrastBtn && contrastText) {
-    toggleContrastBtn.addEventListener('click', () => {
-      contrastText.classList.toggle('low-contrast');
-      contrastText.classList.toggle('high-contrast');
-      toggleContrastBtn.textContent = contrastText.classList.contains('low-contrast') ? 'Aplicar Alto Contraste' : 'Ver Baixo Contraste';
-    });
-  }
 
-  // Desafio da Cor
-  const toggleColorBtn = document.getElementById('toggle-color');
-  const colorErrorMsg = document.getElementById('color-error-msg');
-  if(toggleColorBtn && colorErrorMsg) {
-    toggleColorBtn.addEventListener('click', () => {
-      colorErrorMsg.classList.toggle('error-message-hidden');
-      colorErrorMsg.classList.toggle('error-message-visible');
-      toggleColorBtn.textContent = colorErrorMsg.classList.contains('error-message-hidden') ? 'Adicionar Reforço Visual' : 'Remover Reforço Visual';
-    });
-  }
+    // Inicializa o VLibras Widget
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
 
-  // Desafio da Tipografia
-  const toggleTypographyBtn = document.getElementById('toggle-typography');
-  const typographyText = document.getElementById('typography-text');
-  if(toggleTypographyBtn && typographyText) {
-    toggleTypographyBtn.addEventListener('click', () => {
-      typographyText.classList.toggle('typography-bad');
-      typographyText.classList.toggle('typography-good');
-      toggleTypographyBtn.textContent = typographyText.classList.contains('typography-bad') ? 'Ativar Fonte Amigável' : 'Ver Fonte Inadequada';
-    });
-  }
+    // --- LÓGICA DOS DESAFIOS INTERATIVOS ---
+    const toggleContrastBtn = document.getElementById('toggle-contrast');
+    const contrastText = document.getElementById('contrast-text');
+    if (toggleContrastBtn && contrastText) {
+        toggleContrastBtn.addEventListener('click', () => {
+            contrastText.classList.toggle('low-contrast');
+            contrastText.classList.toggle('high-contrast');
+            toggleContrastBtn.textContent = contrastText.classList.contains('low-contrast') ? 'Aplicar Alto Contraste' : 'Ver Baixo Contraste';
+        });
+    }
 
-  // Novo Toggle de Fonte
-  const fontSwitch = document.getElementById('font-switch');
-  if(fontSwitch) {
-    fontSwitch.addEventListener('click', () => {
-      const isChecked = document.body.classList.toggle('reading-font-active');
-      fontSwitch.setAttribute('aria-checked', isChecked);
-    });
-  }
+    const toggleColorBtn = document.getElementById('toggle-color');
+    const colorErrorMsg = document.getElementById('color-error-msg');
+    if (toggleColorBtn && colorErrorMsg) {
+        toggleColorBtn.addEventListener('click', () => {
+            colorErrorMsg.classList.toggle('error-message-hidden');
+            colorErrorMsg.classList.toggle('error-message-visible');
+            toggleColorBtn.textContent = colorErrorMsg.classList.contains('error-message-hidden') ? 'Adicionar Reforço Visual' : 'Remover Reforço';
+        });
+    }
 
-  // Lógica do Menu Hamburguer
-  const hamburgerBtn = document.querySelector('.hamburger-btn');
-  const navWrapper = document.getElementById('nav-wrapper');
-  const body = document.body;
+    const toggleTypographyBtn = document.getElementById('toggle-typography');
+    const typographyText = document.getElementById('typography-text');
+    if (toggleTypographyBtn && typographyText) {
+        toggleTypographyBtn.addEventListener('click', () => {
+            typographyText.classList.toggle('typography-bad');
+            typographyText.classList.toggle('typography-good');
+            toggleTypographyBtn.textContent = typographyText.classList.contains('typography-bad') ? 'Ativar Fonte Amigável' : 'Ver Fonte Inadequada';
+        });
+    }
 
-  if(hamburgerBtn && navWrapper) {
-    hamburgerBtn.addEventListener('click', () => {
-      const isOpened = hamburgerBtn.getAttribute('aria-expanded') === 'true';
-      hamburgerBtn.setAttribute('aria-expanded', !isOpened);
-      navWrapper.setAttribute('aria-hidden', isOpened);
-      body.classList.toggle('nav-open');
+    // --- LÓGICA DO TOGGLE DE FONTE ---
+    const fontSwitch = document.getElementById('font-switch');
+    if (fontSwitch) {
+        fontSwitch.addEventListener('click', () => {
+            const isChecked = document.body.classList.toggle('reading-font-active');
+            fontSwitch.setAttribute('aria-checked', isChecked);
+        });
+    }
 
-      if(!isOpened) {
-        //Opcional: focar no primeiro item do menu quando aberto
-        navWrapper.querySelector('a').focus();
-      }
-    });
-  }
+    // --- LÓGICA DO MENU HAMBÚRGUER ---
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navWrapper = document.getElementById('nav-wrapper');
+    const body = document.body;
+
+    if (hamburgerBtn && navWrapper) {
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpened = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+            hamburgerBtn.setAttribute('aria-expanded', !isOpened);
+            navWrapper.setAttribute('aria-hidden', isOpened);
+            body.classList.toggle('nav-open');
+
+            if (!isOpened) {
+                // Focar no primeiro item do menu quando aberto para acessibilidade
+                navWrapper.querySelector('a').focus();
+            }
+        });
+    }
+
+    // --- LÓGICA DO ANO DINÂMICO NO RODAPÉ ---
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
+
 
    // Adiciona um pequeno atraso para dar tempo ao script do VLibras de se inicializar
   // setTimeout(() => {
@@ -88,4 +95,4 @@ document.addEventListener('DOMContentLoaded', () => {
   //   }
   //   console.log("--- Fim do Diagnóstico ---");
   // }, 2000);
-});
+
