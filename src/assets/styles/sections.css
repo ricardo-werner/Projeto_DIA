@@ -65,6 +65,14 @@
   text-align: center;
 }
 
+.principle-icon {
+    margin: 0 auto var(--spacing-md) auto;
+    /* Linhas-chave para a visibilidade do SVG */
+    stroke: var(--clr-primary-dark);
+    stroke-width: 0.2rem;
+    fill: none;
+}
+
 /* INTERATIVA */
 .interactive-section {
   padding: var(--spacing-xl) 0;
