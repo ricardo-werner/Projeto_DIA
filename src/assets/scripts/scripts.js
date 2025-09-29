@@ -15,13 +15,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const toggleColorBtn = document.getElementById('toggle-color');
-    const colorErrorMsg = document.getElementById('color-error-msg');
-    if (toggleColorBtn && colorErrorMsg) {
-        toggleColorBtn.addEventListener('click', () => {
-            colorErrorMsg.classList.toggle('error-message-hidden');
-            colorErrorMsg.classList.toggle('error-message-visible');
-            toggleColorBtn.textContent = colorErrorMsg.classList.contains('error-message-hidden') ? 'Adicionar Reforço Visual' : 'Remover Reforço';
+    const validateBtn = document.getElementById('validate-button');
+    const validationInput = document.getElementById('validation-input');
+    const errorMsg = document.getElementById('validation-error-msg');
+    const successMsg = document.getElementById('validation-success-msg');
+
+    if (validateBtn && validationInput && errorMsg && successMsg) {
+        validateBtn.addEventListener('click', () => {
+            const email = validationInput.value;
+            // Expressão regular simples para validar o formato do email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (emailRegex.test(email)) {
+                // Email válido
+                validationInput.classList.remove('invalid');
+                validationInput.classList.add('valid');
+                errorMsg.classList.add('error-message-hidden');
+                errorMsg.classList.remove('error-message-visible');
+                successMsg.classList.remove('success-message-hidden');
+                successMsg.classList.add('success-message-visible');
+                validationInput.setAttribute('aria-invalid', 'false');
+                validationInput.setAttribute('aria-describedby', 'validation-success-msg');
+            } else {
+                // Email inválido
+                validationInput.classList.remove('valid');
+                validationInput.classList.add('invalid');
+                successMsg.classList.add('success-message-hidden');
+                successMsg.classList.remove('success-message-visible');
+                errorMsg.classList.remove('error-message-hidden');
+                errorMsg.classList.add('error-message-visible');
+                validationInput.setAttribute('aria-invalid', 'true');
+                validationInput.setAttribute('aria-describedby', 'validation-error-msg');
+            }
         });
     }
 
