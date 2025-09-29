@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Content Security Policy (CSP) Básico - Camada de Segurança -->
+    <!-- Content Security Policy (CSP) -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' https://vlibras.gov.br https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://vlibras.gov.br;"
+      content="
+        default-src 'self'; 
+        script-src 'self' https://vlibras.gov.br https://cdn.jsdelivr.net 'unsafe-inline'; 
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+        font-src 'self' https://fonts.gstatic.com; 
+        img-src 'self' data: https://vlibras.gov.br; 
+        connect-src 'self' https://vlibras.gov.br;"
     />
 
     <!--SEO-->
@@ -35,16 +41,16 @@
       href="./src/assets/pictures/icons/favicon.ico"
     />
 
-    <!-- Fonte utilizada no projeto: default: Inter e Dislexia: Lexend ou Atkinson Hyperlegible -->
+    <!-- Fonte utilizada no projeto -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./src/assets/styles/index.css" />
-  </head>
-  
-  <body>
+</head>
+
+<body>
     <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
     <header class="main-header">
@@ -53,14 +59,14 @@
 
           <nav class="main-nav" aria-label="Navegação Principal">
             <!-- Botão Hamburguer para Mobile -->
-            <button class="line" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+            <button class="hamburger-btn" aria-label="Abrir Menu de Navegação" aria-controls="nav-wrapper" aria-expanded="false">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
             </button>
 
             <!-- Wrapper para Navegação e Toggle de Fonte -->
-            <div class="nav-wrapper" id="nav-wrapper" role="dialog" aria-label="true" aria-hidden="true">
+            <div class="nav-wrapper" id="nav-wrapper" role="dialog" aria-modal="true" aria-hidden="true">
               <ul>
                 <li><a href="#sobre" aria-current="page">Sobre</a></li>
                 <li><a href="#principios">Princípios</a></li>
@@ -70,11 +76,11 @@
 
               <!-- Novo Toggle de Fonte -->
               <div class="font-toggle" role="region" aria-label="Seletor de fonte para leitura">
-                <label id="font-toggle-label"="font-switch">Fonte para leitura</label>
-                <button id="font-switch" class="switch" role="switch"  aria-checked="false" aria-labelledby="font-toggle-label">
-                  <span class="switch-text" aria-hidden="true">Padrão</span>
+                <label id="font-toggle-label" for="font-switch">Fonte para leitura</label>
+                <button id="font-switch" class="switch" role="switch"  aria-checked="false"   aria-labelledby="font-toggle-label">
+                  <span class="switch-text" aria-hidden="true">Inter</span>
                   <span class="switch-handle"></span>
-                  <span class="switch-text" aria-hidden="true">Dislexia</span>
+                  <span class="switch-text" aria-hidden="true">Lexend</span>
                 </button>
               </div>
             </div>
@@ -85,45 +91,31 @@
     <main id="main-content">
       <section class="hero">
         <div class="container hero-content">
-          <h1>Projeto Desenvolvimento Inclusivo e Acessível</h1>
+          <h1>Desenvolvimento Inclusivo e Acessível</h1>
           <p class="slogan">
-            Tornando a acessibilidade clara como o dia, por padrão e não por exceção. Uma Web para todos!
+            Tornando a acessibilidade clara como o dia. Por padrão, não por exceção.
           </p>
           <a href="#sobre" class="cta-button">Comece seu D.I.A</a>
         </div>
       </section>
 
-      <section class="about-section" id="sobre">
+      <section id="sobre" class="about-section">
         <div class="container">
           <h2>O que é o Projeto D.I.A?</h2>
           <p>
-            O Projeto D.I.A (Desenvolvimento Inclusivo e Acessível) não é a acessibilidade como uma feature, é a base. Uma Web para todos! O projeto nasceu da necessidade de criar um recurso centralizado, em português, que transforma as complexas diretrizes do WCAG em um fluxo de trabalho prático e aplicável para o dia a dia de designers e desenvolvedores. Acreditamos que a tecnologia só cumpre seu propósito quando funciona para todos, independentemente de suas habilidades ou deficiências. Nosso objetivo é capacitar profissionais da área a criar produtos digitais que sejam verdadeiramente acessíveis, promovendo a inclusão digital e garantindo que ninguém fique para trás na era digital.
+            Acessibilidade não é uma feature, é a base. O Projeto D.I.A. nasceu da necessidade de criar um recurso centralizado, em português, que transforma as complexas diretrizes da WCAG em um fluxo de trabalho prático e aplicável para o dia a dia de designers e desenvolvedores. Acreditamos que a tecnologia só cumpre seu propósito quando funciona para todos.
           </p>
         </div>
       </section>
 
-      <section class="principles-section" id="principios">
+      <section id="principios" class="principles-section">
         <div class="container">
           <h2>OS 4 Pilares da Acessibilidade</h2>
           <div class="principles-grid">
             <div class="principle-card">
-              <svg
-                class="principle-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                fill="none"></svg>
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </path>
-                <circle 
-                cx="12" cy="12" r="3" stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </circle>
+              <svg class="principle-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle cx="12" cy="12" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
               </svg>
             
               <h3>Perceptível</h3>
@@ -133,23 +125,9 @@
             </div>
 
             <div class="principle-card">
-              <svg
-                class="principle-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                fill="none">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </path>
-                <polyline points="22 4 12 14.01 9 11.01"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </polyline>
+              <svg class="principle-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline points="22 4 12 14.01 9 11.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
               </svg>
               <h3>Operável</h3>
               <p>
@@ -158,33 +136,11 @@
             </div>
 
             <div class="principle-card">
-              <svg
-                class="principle-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                fill="none">
-                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0v4a3 3 0 0 0-3z"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </path>
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </path>
-                <line x1="12" y1="19" x2="12" y2="23"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </line>
-                <line x1="8" y1="23" x2="16" y2="23"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </line>
+              <svg class="principle-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <line x1="12" y1="19" x2="12" y2="23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="8" y1="23" x2="16" y2="23" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
               </svg>
               <h3>Compreensível</h3>
               <p>
@@ -193,28 +149,13 @@
             </div>
 
             <div class="principle-card">
-              <svg
-                class="principle-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="64"
-                height="64"
-                viewBox="0 0 24 24"
-                fill="none">
-                <polyline points="16 18 22 12 16 6"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </polyline>
-                <polyline points="8 6 2 12 8 18"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                </polyline>                
+              <svg class="principle-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="16 18 22 12 16 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                <polyline points="8 6 2 12 8 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
               </svg>
-
               <h3>Robusto</h3>
               <p>
-                O conteúdo deve ser robusto o suficiente para ser interpretado da forma confiável por uma ampla variedade de agentes de usuário, incluindo tecnologias assistivas.
+                O conteúdo deve ser robusto o suficiente para ser interpretado de forma confiável por uma ampla variedade de agentes de usuário, incluindo tecnologias assistivas.
               </p>
             </div>
         </div>
@@ -224,7 +165,7 @@
         <div class="container">
           <h2>A Ponte na Prática: Sinta a Diferença</h2>
           <p>
-            Experimente como pequenas mudanças do design e no código impactam drasticamente a experiência de diferentes usuários.
+            Experimente como pequenas mudanças no design e no código impactam drasticamente a experiência de diferentes usuários.
           </p>
           <div class="interactive-grid">
             <!-- Desafio 1: Contraste -->
@@ -246,7 +187,7 @@
                 <label for="color-input">Email:</label>
                 <input type="text" id="color-input" class="challenge-input error-border-only" value="email-invalido@">
                 <span id="color-error-msg" class="error-message-hidden">
-                  <strong><img src="./src/assets/pictures/images/warning.png" alt="Warning Icon">&nbsp;Erro:</strong> Formato de email inválido.
+                  <strong>⚠️ Erro:</strong> Formato de email inválido.
                 </span>
               </div>
               <button class="toggle-button" id="toggle-color" aria-controls="color-error-msg">
@@ -258,7 +199,7 @@
               <h3>3. O Desafio da Tipografia</h3>
               <div class="example-area">
                 <p id="typography-text" class="challenge-text typography-bad">
-                  Este texto justificado, com pouco espaçamento e uma fonte serifada, pode ser extremamente cansativo e difícil de decodificar para pessoas com dislexia ou dificuldades de leitura.
+                  Este texto justificado, com pouco espaçamento e uma fonte serifada, pode ser extremamente cansativo e difícil de decodificar para pessoas com dislexia.
                 </p>
               </div>
               <button class="toggle-button" id="toggle-typography" aria-controls="typography-text">
@@ -267,7 +208,7 @@
             </div>
           </div>
           <span class="info-text">
-            <strong>Desafio extra:</strong>Tente navegar por toda esta seção usando apenas a tecla "Tab" do seu teclado.
+            <strong>Desafio extra:</strong> Tente navegar por toda esta seção usando apenas a tecla "Tab" do seu teclado.
           </span>
         </div>
       </section>
@@ -279,70 +220,34 @@
           <ul>
             <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener noreferrer">WAVE</a></li>
             <li><a href="https://www.deque.com/axe/devtools/" target="_blank" rel="noopener noreferrer">Axe DevTools</a></li>
-            <li><a href="https://www.color.adobe.com/create/color-contrast-analyser" target="_blank" rel="noopener noreferrer">Adobe Color Contrast</a></li>
-            <li><a href="https://www.whocanuse.com" target="_blank" rel="noopener noreferrer">Who Can Use</a></li>
+            <li><a href="https://color.adobe.com/create/color-contrast-analyzer" target="_blank" rel="noopener noreferrer">Adobe Color Contrast</a></li>
+            <li><a href="https://whocanuse.com" target="_blank" rel="noopener noreferrer">Who Can Use</a></li>
             <li><a href="https://www.nvaccess.org" target="_blank" rel="noopener noreferrer">Leitor de Tela NVDA</a></li>
           </ul>
         </div>
       </section>
-
     </main>
 
-    <footer class="footer-main">
-      
-      <p class="copyright" id="footer-content">
-        <script>
-          const date = new Date();
-          document.getElementById("footer-content").innerHTML +=
-            date.getFullYear();
-        </script>
-        &copy; Copyright&nbsp;-&nbsp;Projeto D.I.A - Construindo com a missão de uma web para todos&nbsp;<br>
-        Autor: Ricardo Werner - Desenvolvedor Front-end&nbsp;&&nbsp;Acessibilidade(A11Y)&nbsp;&&nbsp;Inclusão Digital
-      </p>
-
-      <p class="redes">Rede para contatos</p>
-
-      <div class="social-icons">
-        <a
-          href="https://www.linkedin.com/in/ricardo-werner"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="linkedin"
-        >
-          <img src="./src/assets/pictures/images/linkedin.png" alt="Linkedin" />
-        </a>
-
-        <a
-          href="https://www.github.com/ricardo-werner"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="github"
-        >
-          <img src="./src/assets/pictures/images/github.png" alt="Github" />
-        </a>
-
-        <a
-          href="https://wa.me/5548992102106?text=Olá,%20vamos%20conversar!!"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="whatsapp"
-        >
-          <img src="./src/assets/pictures/images/whatsapp.png" alt="Whatsapp" />
-        </a>
+    <footer class="main-footer">
+      <div class="container">
+        <p id="footer-content">&copy; <span id="year"></span> Copyright - Projeto D.I.A - Construindo com a missão de uma web para todos <br> Autor: Ricardo Werner - Desenvolvedor Front-end & Acessibilidade(A11Y) & Inclusão Digital</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ricardo-werner" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ricardo Werner"><img src="./src/assets/pictures/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.github.com/ricardo-werner" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Ricardo Werner"><img src="./src/assets/pictures/images/github.png" alt="GitHub"></a>
+            <a href="https://wa.me/5548992102106?text=Olá,%20vamos%20conversar!!" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Ricardo Werner"><img src="./src/assets/pictures/images/whatsapp.png" alt="WhatsApp"></a>
+        </div>
       </div>
     </footer>
 
     <!-- WIDGET VLIBRAS -->
-    <div vw class="enable">
-      <div vw-access-button class="active">
-      </div>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
       <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper">
-        </div>
+        <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script src="./src/assets/scripts/scripts.js"></script>
-  </body>
+</body>
 </html>
