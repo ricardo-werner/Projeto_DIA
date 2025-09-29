@@ -67,8 +67,9 @@ a {
     }
 }
 
-/* Garante que o container do VLibras fique na camada mais alta */
-.vw-access-button.active {
+/* Esta garante a visibilidade do botão VLibras fique na camada mais alta, 
+    sobrescrevendo quaisquer estilos que o script do widget possa injetar */
+div[vw] .vw-access-button {
     position: fixed !important;
     right: 3rem !important;
     bottom: 3rem !important;
