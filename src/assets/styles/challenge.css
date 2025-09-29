@@ -14,21 +14,36 @@
   width: 100%;
   padding: 0.8rem;
   border-radius: 0.4rem;
+  border: 2px solid var(--clr-border); 
+  transition: border-color 0.3s; 
 }
 
-.error-border-only {
-  border: 2px solid var(--clr-error);
+.challenge-input.invalid { 
+  border-color: var(--clr-error); 
 }
 
-.error-message-hidden {
-  display: none;
+.challenge-input.valid { 
+  border-color: var(--clr-success);
 }
 
-.error-message-visible {
-  display: block;
-  color: var(--clr-error);
-  margin: 0.8rem;
-  font-weight: 600;
+.error-message-hidden, 
+.success-message-hidden { 
+  display: none; 
+}
+
+.error-message-visible, 
+.success-message-visible { 
+  display: block; 
+  font-weight: 600; 
+  margin-top: 0.8rem; 
+}
+
+.error-message-visible { 
+  color: var(--clr-error); 
+}
+
+.success-message-visible { 
+  color: var(--clr-success); 
 }
 
 .typography-bad {
