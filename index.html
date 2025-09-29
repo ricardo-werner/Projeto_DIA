@@ -12,11 +12,12 @@
       http-equiv="Content-Security-Policy"
       content="
         default-src 'self'; 
-        script-src 'self' https://vlibras.gov.br https://cdn.jsdelivr.net 'unsafe-inline'; 
+        script-src 'self' https://vlibras.gov.br *.vlibras.gov.br https://cdn.jsdelivr.net 'unsafe-inline' 'unsafe-eval' blob:; 
         style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
-        font-src 'self' https://fonts.gstatic.com; 
-        img-src 'self' data: https://vlibras.gov.br; 
-        connect-src 'self' https://vlibras.gov.br;"
+        font-src 'self' https://fonts.gstatic.com https://vlibras.gov.br https://cdn.jsdelivr.net; 
+        img-src 'self' data: https://vlibras.gov.br *.vlibras.gov.br https://cdn.jsdelivr.net; 
+        connect-src 'self' https://vlibras.gov.br *.vlibras.gov.br https://cdn.jsdelivr.net;
+        worker-src 'self' blob:;"
     />
 
     <!--SEO-->
