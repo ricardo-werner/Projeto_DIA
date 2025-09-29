@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Desafio da Cor e Validação (LÓGICA FINAL)
     const validateBtn = document.getElementById('validate-button');
     const validationInput = document.getElementById('validation-input');
     const errorMsg = document.getElementById('validation-error-msg');
@@ -52,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 validationInput.setAttribute('aria-describedby', 'validation-error-msg');
             }
 
-            // Inicia um temporizador de 5 segundos para resetar o estado visual
+            // Inicia um temporizador de 5 segundos para resetar o estado visual e o conteúdo
             validationTimer = setTimeout(() => {
                 validationInput.classList.remove('valid', 'invalid');
                 errorMsg.classList.add('error-message-hidden');
@@ -61,15 +62,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 successMsg.classList.remove('success-message-visible');
                 validationInput.removeAttribute('aria-describedby');
                 validationInput.removeAttribute('aria-invalid');
-
+                
                 // Limpa o conteúdo do campo de input
                 validationInput.value = '';
-                
+
                 // Devolve o foco ao campo de input após o reset
                 validationInput.focus(); 
             }, 5000); // 5000 milissegundos = 5 segundos
         });
     }
+
 
     const toggleTypographyBtn = document.getElementById('toggle-typography');
     const typographyText = document.getElementById('typography-text');
@@ -90,22 +92,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- LÓGICA DO MENU HAMBÚRGUER ---
+    // --- LÓGICA DO MENU HAMBÚRGUER (ATUALIZADA) ---
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const navWrapper = document.getElementById('nav-wrapper');
     const body = document.body;
+    const navLinks = navWrapper.querySelectorAll('a'); // Seleciona todos os links do menu
+
+    const closeMenu = () => {
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        navWrapper.setAttribute('aria-hidden', 'true');
+        body.classList.remove('nav-open');
+        hamburgerBtn.focus(); // Devolve o foco ao botão que abriu o menu
+    };
+
+    const openMenu = () => {
+        hamburgerBtn.setAttribute('aria-expanded', 'true');
+        navWrapper.setAttribute('aria-hidden', 'false');
+        body.classList.add('nav-open');
+        navWrapper.querySelector('a').focus(); // Foca no primeiro item do menu
+    };
 
     if (hamburgerBtn && navWrapper) {
         hamburgerBtn.addEventListener('click', () => {
-            const isOpened = hamburgerBtn.getAttribute('aria-expanded') === 'true';
-            hamburgerBtn.setAttribute('aria-expanded', !isOpened);
-            navWrapper.setAttribute('aria-hidden', isOpened);
-            body.classList.toggle('nav-open');
-
-            if (!isOpened) {
-                // Focar no primeiro item do menu quando aberto para acessibilidade
-                navWrapper.querySelector('a').focus();
+            const isOpened = body.classList.contains('nav-open');
+            if (isOpened) {
+                closeMenu();
+            } else {
+                openMenu();
             }
+        });
+
+        // Adiciona um "ouvinte" a cada link do menu
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Se o menu estiver aberto, fecha-o
+                if (body.classList.contains('nav-open')) {
+                    closeMenu();
+                }
+            });
         });
     }
 
@@ -115,6 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
         yearSpan.textContent = new Date().getFullYear();
     }
 });
+
+
 
 
    // Adiciona um pequeno atraso para dar tempo ao script do VLibras de se inicializar
