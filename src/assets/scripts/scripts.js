@@ -1,7 +1,5 @@
-// Usamos window.onload para garantir que TODOS os recursos,
-// incluindo o script externo do VLibras, estejam completamente carregados.
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', () => {
   /* A inicialização do VLibras foi movida para cá para garantir que o DOM esteja completamente carregado antes de inicializar o widget */
   new window.VLibras.Widget('https://vlibras.gov.br/app');
     
@@ -67,27 +65,27 @@ window.onload = function() {
   }
 
    // Adiciona um pequeno atraso para dar tempo ao script do VLibras de se inicializar
-  setTimeout(() => {
-    console.log("--- Iniciando Diagnóstico do VLibras ---");
-    const vlibrasWidget = document.querySelector('div[vw]');
-    if (vlibrasWidget) {
-      console.log("Elemento container do VLibras (div[vw]) foi encontrado!", vlibrasWidget);
-      const accessButton = document.querySelector('.vw-access-button');
-      if (accessButton) {
-        console.log("Botão de acesso do VLibras (.vw-access-button) foi encontrado!!", accessButton);
-        const styles = window.getComputedStyle(accessButton);
-        console.log("Estilos computados do botão", {
-          display: styles.display,
-          opacity: styles.opacity,
-          position: styles.position,
-          zIndex: styles.zIndex
-        });
-      } else {
-        console.error("ERRO: Botão de acesso do VLibras (.vw-access-button) NÃO foi encontrado.");
-      }
-    } else {
-      console.error("ERRO: Container do VLibras (div[vw]) NÃO foi encontrado no DOM");
-    }
-    console.log("--- Fim do Diagnóstico ---");
-  }, 2000); //Atraso de 2seg
-};
+  // setTimeout(() => {
+  //   console.log("--- Iniciando Diagnóstico do VLibras ---");
+  //   const vlibrasWidget = document.querySelector('div[vw]');
+  //   if (vlibrasWidget) {
+  //     console.log("Elemento container do VLibras (div[vw]) foi encontrado!", vlibrasWidget);
+  //     const accessButton = document.querySelector('.vw-access-button');
+  //     if (accessButton) {
+  //       console.log("Botão de acesso do VLibras (.vw-access-button) foi encontrado!!", accessButton);
+  //       const styles = window.getComputedStyle(accessButton);
+  //       console.log("Estilos computados do botão", {
+  //         display: styles.display,
+  //         opacity: styles.opacity,
+  //         position: styles.position,
+  //         zIndex: styles.zIndex
+  //       });
+  //     } else {
+  //       console.error("ERRO: Botão de acesso do VLibras (.vw-access-button) NÃO foi encontrado.");
+  //     }
+  //   } else {
+  //     console.error("ERRO: Container do VLibras (div[vw]) NÃO foi encontrado no DOM");
+  //   }
+  //   console.log("--- Fim do Diagnóstico ---");
+  // }, 2000);
+});
