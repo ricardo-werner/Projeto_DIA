@@ -19,9 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const validationInput = document.getElementById('validation-input');
     const errorMsg = document.getElementById('validation-error-msg');
     const successMsg = document.getElementById('validation-success-msg');
+    let validationTimer; // Variável para guardar o ID do temporizador
 
     if (validateBtn && validationInput && errorMsg && successMsg) {
         validateBtn.addEventListener('click', () => {
+            // Limpa qualquer temporizador anterior para evitar resets múltiplos
+            clearTimeout(validationTimer);
+
             const email = validationInput.value;
             // Expressão regular simples para validar o formato do email
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -47,6 +51,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 validationInput.setAttribute('aria-invalid', 'true');
                 validationInput.setAttribute('aria-describedby', 'validation-error-msg');
             }
+
+            // Inicia um temporizador de 5 segundos para resetar o estado visual
+            validationTimer = setTimeout(() => {
+                validationInput.classList.remove('valid', 'invalid');
+                errorMsg.classList.add('error-message-hidden');
+                errorMsg.classList.remove('error-message-visible');
+                successMsg.classList.add('success-message-hidden');
+                successMsg.classList.remove('success-message-visible');
+                validationInput.removeAttribute('aria-describedby');
+                validationInput.removeAttribute('aria-invalid');
+
+                // Limpa o conteúdo do campo de input
+                validationInput.value = '';
+                
+                // Devolve o foco ao campo de input após o reset
+                validationInput.focus(); 
+            }, 5000); // 5000 milissegundos = 5 segundos
         });
     }
 
