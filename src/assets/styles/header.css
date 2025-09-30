@@ -61,7 +61,6 @@
 
 .main-header nav a[aria-current="page"] {
     color: var(--color-primary-light);
-    text-decoration: underline;
 }
 
 
