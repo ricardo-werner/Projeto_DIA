@@ -1,34 +1,19 @@
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
+.main-footer {
     background-color: var(--color-primary-dark);
     color: var(--background-light);
     padding: var(--spacing-lg) 0;
+    text-align: center;
 }
 
-footer #footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    padding-left: 5rem;
-}
-
-footer #year {
-    gap: 1rem;
-}
-
-footer .social-icons {
+.main-footer .social-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    margin-top: var(--spacing-sm);
 }
 
-footer .social-icons a {
+.main-footer .social-icons a {
     width: 3rem;
     height: 3rem;
-    margin: var(--spacing-sm) 0;
 }
