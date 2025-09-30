@@ -9,6 +9,15 @@
     }
 }
 
+/* APLICA A NOVA IMAGEM E O EFEITO PARALLAX APENAS EM DESKTOP */
+@media (min-width: 769px) {
+    .hero {
+        /* --- IMAGEM PARA DESKTOP --- */
+        background-image: url('../pictures/images/acessibilidade.png');
+        background-attachment: scroll;
+    }
+}
+
 
 /* sm - Smartphones modernos / tablets em retrato (até 768px) */
 @media (max-width: 768px) {
@@ -25,10 +34,10 @@
         top: 0;
         right: 0;
         width: 80%;
-        max-width: 320px;
+        max-width: 32rem;
         height: 100vh;
         background-color: var(--background-section);
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        box-shadow: -0.5rem 0 1.5rem rgba(0,0,0,0.1);
         
         display: flex;
         flex-direction: column;
@@ -52,6 +61,14 @@
     
     .font-toggle {
         flex-direction: column;
+    }
+
+    .hero {
+        /* --- IMAGEM PARA MOBILE --- */
+        background-image: url('../pictures/images/bg_acessivel02.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     
     .hero h1 {
