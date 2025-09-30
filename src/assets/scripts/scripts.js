@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Desafio da Cor e Validação (LÓGICA FINAL)
     const validateBtn = document.getElementById('validate-button');
     const validationInput = document.getElementById('validation-input');
     const errorMsg = document.getElementById('validation-error-msg');
@@ -62,12 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 successMsg.classList.remove('success-message-visible');
                 validationInput.removeAttribute('aria-describedby');
                 validationInput.removeAttribute('aria-invalid');
-                
-                // Limpa o conteúdo do campo de input
+
                 validationInput.value = '';
 
-                // Devolve o foco ao campo de input após o reset
-                validationInput.focus(); 
+                validationInput.focus();
             }, 5000); // 5000 milissegundos = 5 segundos
         });
     }
@@ -92,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- LÓGICA DO MENU HAMBÚRGUER (ATUALIZADA) ---
+    // --- LÓGICA DO MENU HAMBÚRGUER ---
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const navWrapper = document.getElementById('nav-wrapper');
     const body = document.body;
@@ -139,7 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
         yearSpan.textContent = new Date().getFullYear();
     }
 });
-
 
 
 
