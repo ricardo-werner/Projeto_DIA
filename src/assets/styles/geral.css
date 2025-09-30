@@ -24,11 +24,11 @@
 }
 
 body {
-    /* Mantivemos o nosso line-height mais generoso (1.7) e a nossa seleção de fontes */
+    /* Seleção de fontes */
     font-family: var(--font-interface);
     font-size: 1.6rem;
-    line-height: 1.7;
-    text-align: left;
+    line-height: 1.7; /* Espaçamento generoso entre linhas (WCAG para Cognitivo */
+    text-align: left; /* Evita texto justificado, que cria "rios" e deifuclta a leitura */
     background-color: var(--background-light);
     color: var(--color-text);
     transition: background-color 0.3s, color 0.3s;
@@ -44,8 +44,6 @@ body.reading-font-active p,
 body.reading-font-active li {
     font-family: var(--font-reading);
 }
-
-
 
 /* Esta garante a visibilidade do botão VLibras fique na camada mais alta, 
     sobrescrevendo quaisquer estilos que o script do widget possa injetar */
