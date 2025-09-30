@@ -1,15 +1,3 @@
-/* Adiciona sublinhado a links dentro do conteúdo principal para clareza (Motor/Cognitivo) */
-main a {
-    text-decoration: underline;
-    text-decoration-color: var(--color-primary-light);
-    text-decoration-thickness: 2px;
-}
-
-/* Remove o sublinhado de links que são estilizados como botões ou elementos especiais */
-main a.cta-button, .tools-section a {
-    text-decoration: none;
-}
-
 .container {
     max-width: 110rem;
     margin: 0 auto;
@@ -24,7 +12,7 @@ main a.cta-button, .tools-section a {
     background: var(--color-primary-dark);
     color: var(--color-white);
     padding: var(--spacing-sm) var(--spacing-md);
-    z-index: 100;
+    z-index: 100000;
     transition: top 0.3s ease-in-out;
     border-radius: 0 0 0.8rem 0.8rem;
 }
@@ -38,6 +26,18 @@ main a.cta-button, .tools-section a {
     outline: 3px solid var(--color-primary-light);
     outline-offset: 0.4rem;
     border-radius: 0.4rem;
+}
+
+/* Adiciona sublinhado a links dentro do conteúdo principal para clareza (Motor/Cognitivo) */
+main a {
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary-light);
+    text-decoration-thickness: 2px;
+}
+
+/* Remove o sublinhado de links que são estilizados como botões ou elementos especiais */
+main a.cta-button, .tools-section a {
+    text-decoration: none;
 }
 
 .cta-button {
