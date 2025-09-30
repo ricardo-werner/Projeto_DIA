@@ -9,21 +9,21 @@
 
 .hamburger-btn .line {
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 2.5rem;
+    height: 0.3rem;
     background-color: var(--color-primary-dark);
-    margin: 5px 0;
+    margin: 0.5rem 0;
     transition: all 0.3s ease-in-out;
 }
 
 /* Animação do Hambúrguer para "X" */
 .nav-open .hamburger-btn .line:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(0.8rem) rotate(45deg);
 }
 .nav-open .hamburger-btn .line:nth-child(2) {
     opacity: 0;
 }
 .nav-open .hamburger-btn .line:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-0.8rem) rotate(-45deg);
 }
 

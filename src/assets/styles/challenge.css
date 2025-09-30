@@ -2,16 +2,32 @@
 .low-contrast { color: var(--color-text-low-contrast); }
 .high-contrast { color: var(--color-text); }
 
-.challenge-input { width: 100%; padding: 0.8rem; border-radius: 4px; border: 2px solid var(--color-border); transition: border-color 0.3s; }
+.challenge-input { 
+    width: 100%; 
+    padding: 0.8rem; 
+    border-radius: 0.4rem; 
+    border: 2px solid var(--color-border); 
+    transition: border-color 0.3s; 
+}
+
 .challenge-input.invalid { border-color: var(--color-error); }
 .challenge-input.valid { border-color: var(--color-success); }
 
 
-.error-message-hidden, .success-message-hidden { display: none; }
-.error-message-visible, .success-message-visible { display: block; font-weight: 600; margin-top: 0.8rem; }
+.error-message-hidden, 
+.success-message-hidden { 
+    display: none; 
+}
+
+.error-message-visible, 
+.success-message-visible { 
+    display: block; 
+    font-weight: 600; 
+    margin-top: 0.8rem; 
+}
+
 .error-message-visible { color: var(--color-error); }
 .success-message-visible { color: var(--color-success); }
-
 
 .typography-bad {
     font-family: var(--font-dyslexia-unfriendly);
@@ -19,6 +35,7 @@
     line-height: 1.2;
     letter-spacing: normal;
 }
+
 .typography-good {
     font-family: var(--font-reading);
     text-align: left;
