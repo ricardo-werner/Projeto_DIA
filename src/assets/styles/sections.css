@@ -97,9 +97,7 @@
     margin-bottom: var(--spacing-sm);
 }
 
-/* ------------------- */
-/* NOVA SEÇÃO INTERATIVA */
-/* ------------------- */
+/* Seção Interativa */
 .interactive-section {
     padding: var(--spacing-xl) 0;
     background-color: var(--background-section);
