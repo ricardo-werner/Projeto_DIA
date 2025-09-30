@@ -1,7 +1,15 @@
-/* md - Tablets em paisagem / notebooks pequenos (até 1024px) */
+/* Imagem de Desktop */
+@media (min-width: 769px) {
+    .hero {
+        background-image: url('../pictures/images/acessibilidade.png');
+        background-attachment: fixed;
+    }
+}
+
+/* Tablets em paisagem */
 @media (max-width: 1024px) {
     .main-nav .nav-wrapper {
-        gap: var(--spacing-md); /* Reduz o espaçamento no menu */
+        gap: var(--spacing-md);
     }
 
     .main-header nav ul {
@@ -9,24 +17,14 @@
     }
 }
 
-/* APLICA A NOVA IMAGEM E O EFEITO PARALLAX APENAS EM DESKTOP */
-@media (min-width: 769px) {
-    .hero {
-        /* --- IMAGEM PARA DESKTOP --- */
-        background-image: url('../pictures/images/acessibilidade.png');
-        background-attachment: scroll;
-    }
-}
-
-
-/* sm - Smartphones modernos / tablets em retrato (até 768px) */
+/* Tablets em retrato e Smartphones */
 @media (max-width: 768px) {
     html {
         font-size: 58%;
     }
 
     .hamburger-btn {
-        display: block; /* Mostra o botão no mobile */
+        display: block; /* AQUI ESTÁ A REGRA CRÍTICA! */
     }
 
     .nav-wrapper {
@@ -53,14 +51,15 @@
         transform: translateX(0);
     }
     
-    .main-header nav ul {
+    .nav-wrapper ul,
+    .nav-wrapper .font-toggle {
         flex-direction: column;
-        text-align: center;
         gap: var(--spacing-lg);
     }
-    
-    .font-toggle {
-        flex-direction: column;
+
+    .main-header nav ul {
+        display: flex;
+        text-align: center;
     }
 
     .hero {
@@ -80,7 +79,7 @@
     }
 }
 
-/* xs - Mobile pequeno (até 480px) */
+/* Smartphones pequenos */
 @media (max-width: 480px) {
     .hero h1 {
         font-size: 3.6rem;
