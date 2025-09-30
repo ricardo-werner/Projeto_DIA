@@ -1,67 +1,67 @@
 .main-header {
-  background-color: var(--clr-white);
-  padding: var(--spacing-md) 0;
-  border-bottom: 1px solid var(--clr-border);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    background-color: var(--color-white);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .main-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main-header .logo {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--clr-primary-dark);
-  z-index: 1001; /* Garante que o logo fique acima do menu mobile */
+.logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    z-index: 1001; /* Garante que o logo fique acima do menu mobile */
 }
 
-.main-header .main-nav {
-  display: flex;
-  align-items: center;
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
-.main-header .nav-wrapper {
-  display:flex;
-  align-items: center;
-  gap: var(--spacing-lg);
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
 }
 
 .main-header nav ul {
-  display: flex;
-  gap: var(--spacing-lg);
+    display: flex;
+    gap: var(--spacing-lg);
 }
 
 .main-header nav a {
-  position: relative;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--clr-text);
-  padding-bottom: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-text);
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
 .main-header nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0.3rem;
-  background-color: var(--clr-primary-light);
-  transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--color-primary-light);
+    transition: width 0.3s ease;
 }
 
 .main-header nav a:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 .main-header nav a[aria-current="page"] {
-  color: var(--clr-primary-light);
-  text-decoration: underline;
+    color: var(--color-primary-light);
+    text-decoration: underline;
 }
 
 

@@ -1,9 +1,10 @@
 @import url(reset.css);
 @import url(geral.css);
-@import url(menu_hambuger.css);
+@import url(menu_hamburger.css);
 @import url(main.css);
 @import url(header.css);
 @import url(sections.css);
 @import url(challenge.css);
 @import url(toggle.css);
 @import url(footer.css);
+@import url(media_query.css);

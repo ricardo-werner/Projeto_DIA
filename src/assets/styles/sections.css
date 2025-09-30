@@ -1,165 +1,191 @@
-/* HERO */
+/* Hero Section com Background Image */
 .hero {
-  background-color: var(--bg-light);
-  padding: var(--spacing-xl) 0;
-  text-align: center;
+    position: relative;
+    background-image: url('../pictures/images/acessibilidade.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Cria o efeito parallax*/
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    color: var(--color-white); /* Texto será branco */
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 61, 98, 0.75); /* Cor primária escura com 75% de opacidade */
+    z-index: 1;
 }
 
 .hero-content {
-  max-width: 80rem;
+    position: relative; /* Garante que o conteúdo fique acima do overlay */
+    z-index: 2;
+    max-width: 800px;
 }
 
 .hero h1 {
-  font-size: 5.2rem;
-  color: var(clr-primary-dark);
-  line-height: 1.2;
-  margin-bottom: var(--spacing-md);
+    font-size: 5.2rem;
+    color: var(--color-white);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
 }
 
 .hero .slogan {
-  font-size: 2rem;
-  margin-bottom: var(--spacing-lg);
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.9;
 }
 
-/* SOBRE */
+/* Seção Sobre */
 .about-section {
-  padding: var(--spacing-xl) 0;
-  background-color: var(--bg-section);
-  text-align: center;
+    padding: var(--spacing-xl) 0;
+    background-color: var(--background-section);
+    text-align: center;
 }
 
 .about-section .container {
-  max-width: 80rem;
+    max-width: 800px;
 }
 
 .about-section h2 {
-  font-size: 3.6rem;
-  color: var(--clr-primary-dark);
-  margin-bottom: var(--spacing-md);
+    font-size: 3.6rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-md);
 }
 
-/* PRINCÍPIOS */
+/* Seção de Princípios */
 .principles-section {
-  padding: var(--spacing-xl) 0;
-  background-color: var(--bg-light);
+    padding: var(--spacing-xl) 0;
+    background-color: var(--background-light);
 }
 
 .principles-section h2 {
-  font-size: 3.6rem;
-  color: var(--clr-primary-dark);
-  text-align: center;
-  margin-bottom: var(--spacing-lg);
+    text-align: center;
+    font-size: 3.6rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-lg);
 }
 
 .principles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-lg);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
 }
 
 .principle-card {
-  background-color: var(--bg-section);
-  padding: var(--spacing-lg);
-  border-radius: 0.8rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  text-align: center;
+    background-color: var(--background-section);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
 }
 
 .principle-icon {
     margin: 0 auto var(--spacing-md) auto;
-    /* Linhas-chave para a visibilidade do SVG */
-    stroke: var(--clr-primary-dark);
-    stroke-width: 0.2rem;
+    stroke: var(--color-primary-dark);
+    stroke-width: 2px;
     fill: none;
 }
 
-/* INTERATIVA */
+.principle-card h3 {
+    font-size: 2rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ------------------- */
+/* NOVA SEÇÃO INTERATIVA */
+/* ------------------- */
 .interactive-section {
-  padding: var(--spacing-xl) 0;
-  background-color: var(--bg-section);
+    padding: var(--spacing-xl) 0;
+    background-color: var(--background-section);
 }
 
 .interactive-section h2 {
-  font-size: 3.6rem;
-  color: var(--clr-primary-dark);
-  text-align: center;
-  margin-bottom: var(--spacing-sm);
+    text-align: center;
+    font-size: 3.6rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-sm);
 }
 
 .interactive-section > .container > p {
-  text-align: center;
-  max-width: 80rem;
-  margin: 0 auto var(--spacing-lg) auto;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg) auto;
 }
 
 .interactive-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--spacing-lg);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
 }
 
 .interactive-card {
-  background-color: var(--bg-light);
-  border: 1px solid var(--clr-border);
-  border-radius: 0.8rem;
-  padding: var(--spacing-md);
-  display: flex;
-  flex-direction: column;
+    background-color: var(--background-light);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
 }
 
 .interactive-card h3 {
-  color: var(--clr-primary-dark);
-  margin-bottom: var(--spacing-md);
-  font-size: 2rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-md);
+    font-size: 2rem;
 }
 
 .example-area {
-  background-color: var(--clr-white);
-  padding: var(--spacing-md);
-  border: 1px solid var(--clr-border);
-  border-radius: 0.4rem;
-  margin-bottom: var(--spacing-md);
-  flex-grow: 1; /* Faz a área crescer para alinhar os botões */
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
 }
 
-/* FERRAMENTAS */
+/* Seção de Ferramentas */
 .tools-section {
-  padding: var(--spacing-xl) 0;
-  background-color: var(--bg-light);
-  text-align: center;
+    padding: var(--spacing-xl) 0;
+    background-color: var(--background-light);
+    text-align: center;
 }
 
 .tools-section h2 {
-  font-size: 3.6rem;
-  color: var(--clr-primary-dark);
-  margin-bottom: var(--spacing-sm);
+    font-size: 3.6rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-sm);
 }
 
 .tools-section > .container > p {
-  margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
 }
 
 .tools-section ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--spacing-md);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
 }
 
 .tools-section a {
-  display: block;
-  background-color: var(--bg-section);
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: 0.5rem;
-  font-weight: 600;
-  color: var(--clr-primary-light);
-  border: 2px solid var(--clr-border);
-  transition: background-color 0.3s, color 0.3s;
+    display: block;
+    background-color: var(--background-section);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5rem;
+    font-weight: 600;
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-border);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .tools-section a:hover {
-  background-color: var(--clr-primary-light);
-  color: var(--clr-white);
-  border-color: var(--clr-primary-light);
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+    border-color: var(--color-primary-light);
 }
-

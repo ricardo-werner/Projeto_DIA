@@ -1,0 +1,75 @@
+/* md - Tablets em paisagem / notebooks pequenos (até 1024px) */
+@media (max-width: 1024px) {
+    .main-nav .nav-wrapper {
+        gap: var(--spacing-md); /* Reduz o espaçamento no menu */
+    }
+
+    .main-header nav ul {
+        gap: var(--spacing-md);
+    }
+}
+
+
+/* sm - Smartphones modernos / tablets em retrato (até 768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 58%;
+    }
+
+    .hamburger-btn {
+        display: block; /* Mostra o botão no mobile */
+    }
+
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: var(--background-section);
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-lg);
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-open .nav-wrapper {
+        transform: translateX(0);
+    }
+    
+    .main-header nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-lg);
+    }
+    
+    .font-toggle {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+    }
+    
+    .hero .slogan {
+        font-size: 1.8rem;
+    }
+}
+
+/* xs - Mobile pequeno (até 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 3.6rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+}

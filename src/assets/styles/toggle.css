@@ -1,79 +1,71 @@
 .font-toggle {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
-
 #font-toggle-label {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--clr-text);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-text);
 }
-
 .switch {
-  display:flex;
-  align-items: center;
-  position: relative;
-  width: 12rem;
-  height: 3.4rem;
-  background-color: #E9ECEF;
-  border-radius: 1.7rem;
-  padding: 0.4rem;
-  cursor: pointer;
-  border: 1px solid var(--clr-border);
-  transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 34px;
+    background-color: #e9ecef;
+    border-radius: 17px;
+    padding: 4px;
+    cursor: pointer;
+    border: 1px solid var(--color-border);
+    position: relative;
+    transition: background-color 0.3s ease;
 }
-
 .switch-text {
-  font-size: 1.2rem;
-  font-weight: 700;
-  width: 50%;
-  text-align: center;
-  color: #6C757D;
-  z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    color: #6c757d;
+    z-index: 1;
 }
-
 .switch-handle {
-  position: absolute;
-  height: 2.8rem;
-  width: 5.4rem;
-  background-color: var(--clr-white);
-  border-radius: 1.4rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  left: 0.3rem;
+    position: absolute;
+    height: 28px;
+    width: 54px;
+    background-color: var(--color-white);
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    left: 3px;
 }
-
 .switch[aria-checked="true"] .switch-handle {
-  transform: translateX(5.8rem);
+    transform: translateX(58px);
 }
-
 .switch[aria-checked="true"] {
-  background-color: var(--clr-primary-light);
+    background-color: var(--color-primary-light);
 }
 
 .toggle-button {
-  background-color: var(--clr-primary-light);
-  color: var(--clr-white);
-  border: none;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s;
-  align-self: center; /* Centraliza o botão verticalmente */
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    align-self: center;
 }
 
 .toggle-button:hover {
-  background-color: var(--clr-primary-dark);
+    background-color: var(--color-primary-dark);
 }
 
 .info-text {
-  text-align: center;
-  font-size: italic;
-  color: #6C757D;
-  display: block;
-  margin-top: var(--spacing-md);
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+    display: block;
+    margin-top: var(--spacing-md);
 }
-
-

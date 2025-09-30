@@ -31,9 +31,7 @@ button,
 textarea,
 select {
     font: inherit;
-    border: none;
-    outline: none;
-    background: none;
+    /* As regras de border, outline e background foram removidas daqui intencionalmente para evitar a remoção do foco padrão do navegador. A estilização do foco é feita abaixo com :focus-visible para garantir a acessibilidade. */
 }
 
 button {
@@ -50,4 +48,18 @@ a {
 ul,
 ol {
     list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

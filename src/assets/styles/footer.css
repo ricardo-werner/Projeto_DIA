@@ -3,6 +3,9 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    background-color: var(--color-primary-dark);
+    color: var(--background-light);
+    padding: var(--spacing-lg) 0;
 }
 
 footer #footer-content {
