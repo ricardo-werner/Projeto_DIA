@@ -60,16 +60,40 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
 
 ### 🧩 Exibição da Página
 
+#### 🖼️ Tela Inicial da Landing Page
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_inicial.PNG" alt="Tela inicial do projeto" />
+</p>
+
+#### 🖼️ Tela Inicial da Landing Page utilizando a tecla TAB do teclado 
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_inicial_tab.PNG" alt="Tela inicial do projeto utilizando a tecla TAB" />
+</p>
+
 #### 🖼️ Tela da Landing Page
 
 <p align="center">
-  <img width="480" src="./src/assets/pictures/to_readme/tela_inicial.PNG" alt="Tela inicial do projeto" />
+  <img width="480" src="./src/assets/to_readme/tela_inicial.PNG" alt="Tela inicial do projeto" />
 </p>
 
-#### 🖼️ Tela com código HTML e CSS
+#### 🖼️ Tela da Landing Page - O que é o Projeto D.I.A.
 
 <p align="center">
-  <img width="480" src="./src/assets/pictures/to_readme/tela_codigo.PNG" alt="Estrutura HTML, CSS e Javascript" />
+  <img width="480" src="./src/assets/to_readme/tela_projeto.PNG" alt="O que é o Projeto D.I.A." />
+</p>
+
+#### 🖼️ Tela da Landing Page - O que é o Projeto D.I.A.
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_projeto.PNG" alt="O que é o Projeto D.I.A." />
+</p>
+
+#### 🖼️ Tela com código HTML, CSS e Javascript
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_codigo.PNG" alt="Estrutura HTML, CSS e Javascript" />
 </p>
 
 ---
