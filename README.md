@@ -22,7 +22,9 @@ Esta página serve como um recurso educacional e eum exemplo vivo de que é poss
 
 Abaixo está o fluxograma representando a estrutura do DOM utilizada neste projeto. A organização hierárquica foi pensada para garantir uma navegação lógica e clara para tecnologias assistivas, como leitores de tela.
 
-
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/estruturaDom.png" alt="Estrutura do DOM do Projeto D.I.A. " />
+</p>
 ---
 
 ### ✅ Status do Projeto
@@ -67,7 +69,7 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
 #### 🖼️ Tela com código HTML e CSS
 
 <p align="center">
-  <img width="480" src="./src/assets/pictures/to_readme/tela_codigo.PNG" alt="Estrutura HTML e CSS" />
+  <img width="480" src="./src/assets/pictures/to_readme/tela_codigo.PNG" alt="Estrutura HTML, CSS e Javascript" />
 </p>
 
 ---
