@@ -2,9 +2,9 @@
 Uma landing page educacional e interativa construída com as melhores práticas de HTML semântico, CSS moderno e Javascript, com um foco profundo em acessibilidade (A11Y), segurança (CSP) e responsividade.
 
 
-🔗 Deploy
+## 🔗 Deploy
 
-🔗 Acesse a página publicada aqui:  
+### 🔗 Acesse a página publicada aqui:  
 
 👉 https://ricardo-werner.github.io/Projeto_DIA/
 
@@ -47,11 +47,11 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
 
 | Item | Requisito                                                                |
 | ---- | ------------------------------------------------------------------------ |
-| 1    | A página deve ser desenvolvida em HTML, CSS e Javascript                        |
+| 1    | A página deve ser desenvolvida em HTML, CSS e Javascript                 |
 | 2    | Utilizar todas as tags obrigatórias e sugeridas                          |
 | 3    | CSS externo, uso de variáveis e `font-size: 62.5%` (para usar `rem`)     |
 | 4    | Estrutura responsiva (mobile-first ou adaptável)                         |
-| 5    | Projeto sem dependências externas de JavaScript                          |
+| 5    | Projeto com dependência externa de JavaScript - VLibras                  |
 | 6    | Possibilidade de uso como template de portfólio futuramente              |
 
 ---
