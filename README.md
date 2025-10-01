@@ -1,23 +1,26 @@
-# Projeto_DIA
-Projeto pessoal de criação de um front-end visando a inclusão digital (D.I.A - Desenvolvimento Inclusivo e Acessível)
+# Projeto_DIA - Desenvolvimento Inclusivo e Acessível
+Uma landing page educacional e interativa construída com as melhores práticas de HTML semântico, CSS moderno e Javascript, com um foco profundo em acessibilidade (A11Y), segurança (CSP) e responsividade.
 
 
-### 🔗 Deploy
+🔗 Deploy
 
 🔗 Acesse a página publicada aqui:  
-👉 
+
+👉 https://ricardo-werner.github.io/Projeto_DIA/
 
 ---
 
 ### 📜 Sobre o Projeto
 
+O Projeto D.I.A. (Desenvolvimento Inclusivo e Acessível) nasceu como um desafio técnico e evoluiu para um guia prático e funcional sobre como construir uma web verdadeiramente para todos. O Objetivo é demonstrar, na prática, a aplicação de diretrizes de acessibilidade, segurança e design responsivo, transformando conceitos complexos em uma experiência de usuário tangível e inclusiva.
 
+Esta página serve como um recurso educacional e eum exemplo vivo de que é possível criar interfaces visualmente atraentes, seguras e que funcionam par pessoas com diferentes habilidades
 
 #### 🧩 Mapa da Estrutura do DOM do HTML:
 
 ## 🧠 Mapa da Estrutura do DOM
 
-Abaixo está o fluxograma representando a estrutura do DOM utilizada neste projeto. Ele reflete a organização semântica do HTML, separando áreas como navegação, conteúdo principal, seções laterais e elementos visuais.
+Abaixo está o fluxograma representando a estrutura do DOM utilizada neste projeto. A organização hierárquica foi pensada para garantir uma navegação lógica e clara para tecnologias assistivas, como leitores de tela.
 
 
 ---
@@ -34,7 +37,7 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
 | ----- | -----------------------------------------------------------------------| 
 | 1     | Estruturação HTML com tags semânticas e para acessibilidade            |
 | 2     | Estilização CSS externa com variáveis e responsividade                 |
-| 3     | Layout com flexbox e CSS Grid                                          |
+| 3     | Layout com Flexbox e CSS Grid                                          |
 | 4     | Aplicação de boas práticas de acessibilidade e SEO                     |
 | 5     | Inclusão de imagens, ícones, links de videos e ajustes para portfólio  |
 
@@ -44,7 +47,7 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
 
 | Item | Requisito                                                                |
 | ---- | ------------------------------------------------------------------------ |
-| 1    | A página deve ser desenvolvida em HTML e CSS puro                        |
+| 1    | A página deve ser desenvolvida em HTML, CSS e Javascript                        |
 | 2    | Utilizar todas as tags obrigatórias e sugeridas                          |
 | 3    | CSS externo, uso de variáveis e `font-size: 62.5%` (para usar `rem`)     |
 | 4    | Estrutura responsiva (mobile-first ou adaptável)                         |
