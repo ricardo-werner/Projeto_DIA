@@ -100,7 +100,7 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
 1. **Clone o repositório:**
 
 ```bash
-git clone 
+git clone https://github.com/ricardo-werner/Projeto_DIA.git
 ```
 
 2. Abra o projeto no VS Code
@@ -118,7 +118,7 @@ git clone
 4. Visualize o resultado:
 
   <p align="center">
-    <img width="480" src="./src/assets/pictures/to_readme/resultadoWeb.PNG" alt="Resultado na Web">
+    <img width="480" src="./src/assets/to_readme/resultadoWeb.PNG" alt="Resultado na Web">
   </p>
 
 ---
