@@ -146,13 +146,17 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
 
 ### 🎯 Funcionalidades Técnicas Aplicadas
 
-| Recurso                   | Aplicado |
-| ------------------------- | -------- |
-| Tags semânticas HTML      | ✅       |
-| CSS externo com variáveis | ✅       |
-| Layout responsivo         | ✅       |
-| Acessibilidade básica     | ✅       |
-| Preparação para SEO       | ✅       |
+| Recurso                   | Descrição | Aplicado |
+| ------------------------- | --------- | -------- |
+| Tags semânticas HTML      | USo de tags como ```<header>, <main>, <section> e <nav>``` para estruturar o conteúdo de forma lógica, melhorando o SEO e a navegação por tecnologias assistivas.     | ✅       |
+| CSS externo com variáveis | O estilo é centralizado em uma folha de estilos externa, utilizando variáveis (Custom Properties) para gerenciar cores, fontes e espaçamentos, facilitando a manutenção e a consistência do design.                  | ✅       |
+| Javascript(Vanila JS)     | Utilizado para criar toda a interatividade da página, como o menu hambúrguer, os desafios de acessibilidade e o toggle de fontes, com foco em manipulação de DOM e gerenciamento de eventos. | ✅       |
+| Layout responsivo         | Design mobile-first com múltiplos breakpoints - imagens de fundo diferentes mobile e desktop | ✅       |
+| Seção Interativa          | Módulos que permitem ao usuário "sentir na pele" os desafios de baixo contraste, falta de reforço visual e tipografia inadequada | ✅       |
+| Toggle de Fonte           | Um interruptor no cabeçalho permite ao usuário alternar entre a fonte padrão (Inter) e uma fonte otimizada para dislexia (Lexend) | ✅       |
+| Menu Hamburguer Acessível | Manu navegação para dispositivos móveis, totalmente funcional via teclado e com gerenciamento de foco correto | ✅       |
+| Segurança (CSP)           | Uma robusta Política de Segurança de Conteúdo foi implementada para previnir ataques XSS, enquanto permite integração segura de scripts de terceiros com o VLibras | ✅       |
+| Validação de Formulário com UX   | O exemplo de validação de email feedback instantâneo, mensagem de erro clara e um temporizador de 5 seg para resetar o estado, melhorando a experiência do usuário | ✅       |
 
 ---
 
