@@ -136,8 +136,11 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
 
 - **HTML5**
 - **CSS3 (com variáveis, responsividade)**
+- **Javascript(Vanila JS)**
+- **VLibras(Widget de Acessibilidade em Libras)**
+- **Google Fonts(Inter e Lexend)**
 - **Visual Studio Code + Live Server**
-- **ChatGPT (para apoio técnico e estruturação)**
+- **Gemini PRO (para apoio técnico e estruturação)**
 
 ---
 
