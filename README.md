@@ -72,10 +72,10 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
   <img width="480" src="./src/assets/to_readme/tela_inicial_tab.PNG" alt="Tela inicial do projeto utilizando a tecla TAB" />
 </p>
 
-#### 🖼️ Tela da Landing Page
+#### 🖼️ Tela da Landing Page - Modal VLibras
 
 <p align="center">
-  <img width="480" src="./src/assets/to_readme/tela_inicial.PNG" alt="Tela inicial do projeto" />
+  <img width="480" src="./src/assets/to_readme/tela_vlibras.PNG" alt="Modal VLibras" />
 </p>
 
 #### 🖼️ Tela da Landing Page - O que é o Projeto D.I.A.
@@ -84,10 +84,44 @@ Abaixo está o fluxograma representando a estrutura do DOM utilizada neste proje
   <img width="480" src="./src/assets/to_readme/tela_projeto.PNG" alt="O que é o Projeto D.I.A." />
 </p>
 
-#### 🖼️ Tela da Landing Page - O que é o Projeto D.I.A.
+#### 🖼️ Tela da Landing Page - Os 4 Pilares da Acessibilidade
 
 <p align="center">
-  <img width="480" src="./src/assets/to_readme/tela_projeto.PNG" alt="O que é o Projeto D.I.A." />
+  <img width="480" src="./src/assets/to_readme/tela_4_pilares.PNG" alt="Os 4 Pilares da Acessibilidade" />
+</p>
+
+#### 🖼️ Tela da Landing Page - A Ponte na Prática: Sinta a Diferença 
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_pratica.PNG" alt="A Ponte na Prática: Sinta a Diferença" />
+</p>
+
+#### 🖼️ Tela da Landing Page - A Ponte na Prática: O Desafio do Contraste
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_pratica_hight.PNG" alt="A Ponte na Prática: O Desafio do Contraste" />
+</p>
+
+#### 🖼️ Tela da Landing Page - A Ponte na Prática: O Desafio da Cor e Validação
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_pratica_e.PNG" alt="Validação com mensagem de erro" />
+</p>
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_pratica_s.PNG" alt="Validação com mensagem de sucesso." />
+</p>
+
+#### 🖼️ Tela da Landing Page - A Ponte na Prática: Desafio da Tipografia
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_pratica_adequada.PNG" alt="O que é o Projeto D.I.A." />
+</p>
+
+#### 🖼️ Tela da Landing Page - Ferramentas Essenciais
+
+<p align="center">
+  <img width="480" src="./src/assets/to_readme/tela_ferramentas.PNG" alt="Ferramentas Essenciais" />
 </p>
 
 #### 🖼️ Tela com código HTML, CSS e Javascript
