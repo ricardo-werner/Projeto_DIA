@@ -175,11 +175,11 @@ git clone https://github.com/ricardo-werner/Projeto_DIA.git
 4. Ative o Go Live:
 
   <p align="center">
-     <img width="280" src="./src/assets/to_readme/GoLive.jpg" alt="Ativando o Go Live">
+     <img width="240" src="./src/assets/to_readme/GoLive.jpg" alt="Ativando o Go Live">
   </p>
 
   <p align="center">
-     <img width="280" src="./src/assets/to_readme/GoLiveOn.jpg" alt="Go Live ativado">
+     <img width="240" src="./src/assets/to_readme/GoLiveOn.jpg" alt="Go Live ativado">
   </p>
 
 5. Visualize o resultado:
@@ -205,6 +205,6 @@ O resultado é um projeto que não só serve como portfólio, mas também como u
 
 ---
 
-🙋‍♂️ Autor:&nbsp
+🙋‍♂️ Autor:&nbsp;&nbsp;
 Ricardo Werner - 
 Desenvolvedor Front-end & Acessibilidade (A11Y) & Inclusão Digital
