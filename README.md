@@ -170,17 +170,19 @@ git clone https://github.com/ricardo-werner/Projeto_DIA.git
 
 2. Abra o projeto no VS Code
 
-3. Ative o Go Live:
+3. Se você usa o VS Code com a extensão "Live Server", clique em "GO LIVE" no canto inferior direito para iniciar um servidor local. Caso contrário, abra o arquivo ```index.html``` diretamente do seu navegador.
+    
+4. Ative o Go Live:
 
   <p align="center">
-     <img width="280" src="./src/assets/pictures/to_readme/GoLive.jpg" alt="Ativando o Go Live">
+     <img width="280" src="./src/assets/to_readme/GoLive.jpg" alt="Ativando o Go Live">
   </p>
 
   <p align="center">
-     <img width="280" src="./src/assets/pictures/to_readme/GoLiveOn.jpg" alt="Go Live ativado">
+     <img width="280" src="./src/assets/to_readme/GoLiveOn.jpg" alt="Go Live ativado">
   </p>
 
-4. Visualize o resultado:
+5. Visualize o resultado:
 
   <p align="center">
     <img width="480" src="./src/assets/to_readme/resultadoWeb.PNG" alt="Resultado na Web">
@@ -189,8 +191,9 @@ git clone https://github.com/ricardo-werner/Projeto_DIA.git
 ---
 
 💡 Reflexões
-Desenvolver este projeto reforçou meu conhecimento na importância de compreender os fundamentos do HTML e CSS.
-Também serviu como um novo modo para estruturar um portfólio mais completo, com acessibilidade e boas práticas de SEO.
+Desenvolver este projeto foi uma jornada de aprendizado profunda, especialmente na depuração de problemas complexos do mundo real, como a configuração de uma Política de Segurança de Conteúdo (CSP) para integrar ferramentas de terceiros. Cada erro encontrado e resolvido reforçou a importância de uma abordagem metódica e da utilização das ferramentas de desenvolvedor do navegador.
+
+O resultado é um projeto que não só serve como portfólio, mas também como um testemunho do meu compromisso com a criação de uma web verdadeiramente inclusive e acessível.
 
 ---
 
@@ -202,7 +205,6 @@ Também serviu como um novo modo para estruturar um portfólio mais completo, co
 
 ---
 
-🙋‍♂️ Autor <br>
-Ricardo Werner <br>
-Desenvolvedor Front-end - em transição de carreira <br>
-Front-End | HTML | CSS | Javascript | React
+🙋‍♂️ Autor:&nbsp
+Ricardo Werner - 
+Desenvolvedor Front-end & Acessibilidade (A11Y) & Inclusão Digital
