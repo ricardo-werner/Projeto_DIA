@@ -14,7 +14,7 @@ Uma landing page educacional e interativa construída com as melhores práticas 
 
 O Projeto D.I.A. (Desenvolvimento Inclusivo e Acessível) nasceu como um desafio técnico e evoluiu para um guia prático e funcional sobre como construir uma web verdadeiramente para todos. O Objetivo é demonstrar, na prática, a aplicação de diretrizes de acessibilidade, segurança e design responsivo, transformando conceitos complexos em uma experiência de usuário tangível e inclusiva.
 
-Esta página serve como um recurso educacional e eum exemplo vivo de que é possível criar interfaces visualmente atraentes, seguras e que funcionam par pessoas com diferentes habilidades
+Esta página serve como um recurso educacional e é um exemplo vivo de que é possível criar interfaces visualmente atraentes, seguras e que funcionam par pessoas com diferentes habilidades
 
 #### 🧩 Mapa da Estrutura do DOM do HTML:
 
